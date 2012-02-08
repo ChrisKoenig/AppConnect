@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExtrasInfo>
+
+  <!-- Application title -->
+  <AppTitle>
+    <default>AppConnect Demo App</default>
+  </AppTitle>
+
+  <!-- Search-related captions -->
+  <Consumer ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5661}">
+
+    <!-- Products caption for video games -->
+    <ExtensionInfo>
+      <Extensions>
+        <ExtensionName>Bing_Products_Video_Games</ExtensionName>
+      </Extensions>
+      <CaptionString>
+        <default>Found in Video Games</default>
+      </CaptionString>
+    </ExtensionInfo>
+
+    <!-- Movies caption -->
+    <ExtensionInfo>
+      <Extensions>
+        <ExtensionName>Bing_Movies</ExtensionName>
+      </Extensions>
+      <CaptionString>
+        <default>Found in Movies</default>
+      </CaptionString>
+    </ExtensionInfo>
+
+    <!-- Places caption for food and dining -->
+    <ExtensionInfo>
+      <Extensions>
+        <ExtensionName>Bing_Places_Food_and_Dining</ExtensionName>
+      </Extensions>
+      <CaptionString>
+        <default>Found in Food and Dining</default>
+      </CaptionString>
+    </ExtensionInfo>
+  </Consumer>
+</ExtrasInfo>

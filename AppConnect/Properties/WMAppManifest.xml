@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{fb1b8f42-d3b6-46fa-8a60-820da114b663}" Title="AppConnect" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="AppConnect author" Description="Sample description" Publisher="AppConnect">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_GAMERSERVICES"/>
+      <Capability Name="ID_CAP_IDENTITY_DEVICE"/>
+      <Capability Name="ID_CAP_IDENTITY_USER"/>
+      <Capability Name="ID_CAP_LOCATION"/>
+      <Capability Name="ID_CAP_MEDIALIB"/>
+      <Capability Name="ID_CAP_MICROPHONE"/>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_PHONEDIALER"/>
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_ISV_CAMERA"/>
+      <Capability Name="ID_CAP_CONTACTS"/>
+      <Capability Name="ID_CAP_APPOINTMENTS"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="AppConnectToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>AppConnect</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <!-- Production extensions, for products: video games -->
+      <Extension
+        ExtensionName="Bing_Products_Video_Games"
+        ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5661}"
+        TaskID="_default"
+        ExtraFile="Extensions\\Extras.xml" />
+
+      <!-- Production extensions, for movies. -->
+      <Extension
+        ExtensionName="Bing_Movies"
+        ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5661}"
+        TaskID="_default"
+        ExtraFile="Extensions\\Extras.xml" />
+
+      <!-- Production extensions, for places: travel, food, and dining. -->
+      <Extension
+        ExtensionName="Bing_Places_Food_and_Dining"
+        ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5661}"
+        TaskID="_default"
+        ExtraFile="Extensions\\Extras.xml" />
+    </Extensions>
+  </App>
+</Deployment>
